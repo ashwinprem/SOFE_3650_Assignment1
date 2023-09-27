@@ -2,11 +2,11 @@
 
 # SOFE3650 - Assignment #1
 
-<ins>**Implementations of Abstract Factory Pattern and Factory Method Pattern [UML, Java]**</ins>
+<ins>**Implementations of Abstract Factory Pattern and Factory Method Pattern (UML, Java)**</ins>
 
 <ins>*Wednesday, September 27, 2023*</ins>
 
-*Assign Exercise Gp. 6:*
+*Assign. Exercise Gp. 6:*
 
 |Name|Student #|
 |:---:|:---:|
