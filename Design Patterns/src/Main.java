@@ -1,7 +1,11 @@
-import java.util.SortedMap;
+import java.text.DecimalFormat;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        DecimalFormat df = new DecimalFormat("0.00");
+
         GroceryStoreSupplier appleFactory = new AppleHarvester();
         GroceryProductFactory apple = appleFactory.gatherFruit();
 
@@ -12,8 +16,8 @@ public class Main {
 
         System.out.println("A new banana was created\n");
 
-        System.out.println("Apple's cost: $" + apple.getPrice());
-        System.out.println("Banana's cost: $" + banana.getPrice());
+        System.out.println("Apple's cost: $" + df.format(apple.getPrice()));
+        System.out.println("Banana's cost: $" + df.format(banana.getPrice()));
 
     }
 }

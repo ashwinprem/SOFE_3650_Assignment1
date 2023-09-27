@@ -1,6 +1,7 @@
 public class Apple implements GroceryProductFactory
 {
     private double price;
+    
     @Override
     public void setPrice()
     {

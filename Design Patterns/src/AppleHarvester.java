@@ -1,4 +1,5 @@
-public class AppleHarvester extends GroceryStoreSupplier{
+public class AppleHarvester extends GroceryStoreSupplier
+{
     @Override
     public GroceryProductFactory createFruit()
     {

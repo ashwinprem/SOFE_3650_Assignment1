@@ -1,4 +1,5 @@
-public abstract class GroceryStoreSupplier {
+public abstract class GroceryStoreSupplier
+{
     public GroceryProductFactory gatherFruit()
     {
        GroceryProductFactory fruit = createFruit();
