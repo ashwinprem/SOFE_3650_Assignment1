@@ -1,36 +1,34 @@
-import java.util.*;
+import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-public class ReadDB {
+public class ReadDB 
+{
     public static double getDBPrice(String name)
     {
         double fruitPriceFromDB = 1;
-         try
+        
+        try (Scanner sc = new Scanner(new File("src/DB.txt"));)
         {
-            File file = new File("src/DB.txt");
-            Scanner scan = new Scanner(file);
-
-            while (scan.hasNext())
+            while (sc.hasNext())
             {
-                String db_Name = scan.next();
-                if (db_Name.equals(name) && scan.hasNextDouble())
+                String db_Name = sc.next();
+
+                if (db_Name.equals(name) && sc.hasNextDouble())
                 {
-                    fruitPriceFromDB = scan.nextDouble();
+                    fruitPriceFromDB = sc.nextDouble();
                     break;
                 }
-                else {
-                    if (scan.hasNextDouble())
-                        scan.nextDouble();
-                }
+                else 
+                    if (sc.hasNextDouble())
+                        sc.nextDouble();
             }
         }
-         catch (FileNotFoundException err)
+        catch (FileNotFoundException err)
         {
             System.out.println("Error reading the file");
             err.printStackTrace();
         }
-         return fruitPriceFromDB;
+        return fruitPriceFromDB;
     }
-
 }
