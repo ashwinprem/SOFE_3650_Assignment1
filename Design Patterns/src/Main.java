@@ -18,6 +18,5 @@ public class Main
 
         System.out.println("Apple's cost: $" + df.format(apple.getPrice()));
         System.out.println("Banana's cost: $" + df.format(banana.getPrice()));
-
     }
 }
