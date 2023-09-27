@@ -1,10 +1,8 @@
-# SOFE_3650_Assignment1
+# SOFE3650 - Assignment #1
 
-Implementing Abstracting Factory Pattern and Factory Method Pattern using UML and Java, for SOFE 3650 Assignment 1.
+***Implementations of Abstract Factory Pattern and Factory Method Pattern [UML, Java]***
 
-Group Members:
-Verina Bouls (100789566)
-Ashwin Prem (100805031)
-Noah Toma ( )
+***Assign Exercise Gp. 6 - Noah Toma (100825559), Verina Bouls (100789655), Ashwin Prem (100805031)***
 
-Assign Exercise Gp. 6
+*Wednesday, September 27, 2023*
+
