@@ -27,5 +27,6 @@ Assign Exercise Gp. 6
 
 To demonstrate how an object can be created, objects _appleFactory_ and _bananaFactory_ are created that are of type _GroceryStoreSupplier_. Then the actual produce (ie. apple and/or banana) are created that are of type _GroceryProductFactory_ by using the _gatherFruit()_ method. The price of each product is set when the objects get created, and can be retried via the _getPrice()_ method.
 
-![Main Test function](TestOutput_Images/MainTest.png)
+![Main Test function](TestOutput_images/MainTest.png)
+
 ![Test Output](TestOutput_images/TestOutput.png)
