@@ -8,7 +8,7 @@ public class ReadDB
     {
         double fruitPriceFromDB = 1;
         
-        try (Scanner sc = new Scanner(new File("src/DB.txt"));)
+        try (Scanner sc = new Scanner(new File("Design Patterns/src/DB.txt"));)
         {
             while (sc.hasNext())
             {
