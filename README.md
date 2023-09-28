@@ -24,15 +24,19 @@
 
 This repository contains all submission files as per the requirements outlined in the assignment.
 
-The main directory features both subdirectories and files.  The first subdirectory contains the Java source code, and is labeled 'Design Patterns'.  The second subdirectory includes all raw image files that depict the output of the Java implementation, and is labeled 'Output'.  The third subdirectory is titled 'UML', and contains both a PNG and JPEG image file depicting the completed UML diagram of the design pattern architecture.  The files contained in the main directory include this Markdown document (titled 'README.md'), the rubric provided for this assignment (titled 'Assign1-Design Patterns.pdf'), and a '.gitignore' file to prevent unnecessary file commits.
+The main directory features both subdirectories and files.  The first subdirectory contains the Java source code, and is labeled [Design Patterns](./Design%20Patterns/).  The second subdirectory includes all image files that depict the output of the Java implementation, and is labeled [Output](./Output/).  The third subdirectory is titled [UML](./UML/), and contains both a [PNG](./UML/UML.png) and [JPEG](./UML/UML.jpeg) image file depicting the completed UML diagram of the design pattern architecture.  The files contained in the main directory include this Markdown document (titled [README.md](./README.md)), the rubric provided for this assignment (titled [Assign1-Design Patterns.pdf](./Assign1-Design%20Patterns.pdf)), and a [.gitignore](./.gitignore) file to prevent unnecessary file commits.
 
-'Design Patterns' contains all necessary project files, including all necessary '.java' and '.txt' source code files.  One of the subdirectories in this folder is labeled 'Test', and includes a test file ('Main.java') that serves as a means of analyzing the Java implementation by providing meaningful output.  This output, as well as the code itself, is captured in this document, as well as in the 'Output' folder.
+[Design Patterns](./Design%20Patterns/) contains all necessary project files, including all necessary '.java' and '.txt' source code files within subdirectory [src](./Design%20Patterns/src/).  The other subdirectory in this folder is labeled [Test](./Design%20Patterns/Test/), and includes a test file ([Main.java](./Design%20Patterns/Test/Main.java)) that serves as a means of analyzing the Java implementation by providing meaningful output.  This output, as well as the code itself, is captured in this document, as well as in the [Output](./Output/) folder.
 
 </div>
 <br>
 
-<details align="center">
-  <summary style="list-style: none;"><h2>Source Code + Output</h2></summary>
+<div align="center">
+
+## Source Code + Output
+
+<details>
+  <summary>Open/Close</summary>
   
   |*Main.java*: Source Code|*Main.java*: Output|
   |:---:|:---:|
@@ -76,5 +80,20 @@ The main directory features both subdirectories and files.  The first subdirecto
 ![UML Diagram](UML/UML.jpeg)
 
 </details>
+
+</div>
+<br>
+
+<div align="center">
+
+## Description of [Main.java](./Design%20Patterns/Test/Main.java)
+
+First, the file imports the `DecimalFormat` library, for the purposes of formatting float output.  Then, the `Main` class is instantiated and populated with a standard *'PSVM' method* (`public static void main(String[] args)`), which takes an array of Strings as an argument.  
+
+In this method, a `DecimalFormat` object is instantiated.  Next, a `GroceryStoreSupplier` object is instantiated with an `AppleHarvester` constructor and is followed by a `GroceryProductFactory` object that is instantiated with the value returned by the function `appleFactory.gatherFruit()`, which is an `Apple` object with a price set by the value read from [DB.txt](./Design%20Patterns/src/DB.txt).  The `Apple` object (which follows a 'Factory Method' pattern inherited from `GroceryProductFactory`) reads the price value stored in the database, stores it, and is returned via the `AppleHarvester` object, which inherits from the `GroceryStoreSupplier` 'Abstract Factory'.  Thus, `apple` is an `Apple` object (which itself is a factory method) returned by an abstract factory (`GroceryStoreSupplier`'s `gatherFruit()` method).  If the database was queried without error and the object was succcessfully instantiated, then a message stating that a new `Apple` has been created is printed to the screen.  The *exact* same logic applies to the `Banana` object, only involving its respective classes/factory patterns instead for the purposes of distinction.
+
+Finally, to demonstrate that the program has functioned as intended (i.e., the factories successfully produced respective objects and the database was read without error), the costs of `Apple` and `Banana` are printed to the screen with formatting.
+
+</div>
 
 <hr>
