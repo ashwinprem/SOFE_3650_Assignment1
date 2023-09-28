@@ -6,7 +6,7 @@ public class ReadDB
 {
     public static double getDBPrice(String name)
     {
-        double fruitPriceFromDB = 1;
+        double fruitPriceFromDB = 0;
         
         try (Scanner sc = new Scanner(new File("Design Patterns/src/DB.txt"));)
         {
