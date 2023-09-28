@@ -1,3 +1,4 @@
+<div align="center">
 <hr>
 
 # SOFE3650 - Assignment #1
@@ -14,7 +15,10 @@
 |Verina Bouls|100789655|
 |Ashwin Prem|100805031|
 
+</div>
 <br>
+
+<div align="center">
 
 ## Structure
 
@@ -24,21 +28,25 @@ The main directory features both subdirectories and files.  The first subdirecto
 
 'Design Patterns' contains all necessary project files, including all necessary '.java' and '.txt' source code files.  One of the subdirectories in this folder is labeled 'Test', and includes a test file ('Main.java') that serves as a means of analyzing the Java implementation by providing meaningful output.  This output, as well as the code itself, is captured in this document, as well as in the 'Output' folder.
 
+</div>
 <br>
 
-## Source Code + Output
+<details align="center">
+  <summary style="list-style: none;"><h2>Source Code + Output</h2></summary>
+  
+  |*Main.java*: Source Code|*Main.java*: Output|
+  |:---:|:---:|
+  |![Java File](Output/Main_Class.JPG)|![Output](Output/Main_Output.JPG)|
+  
+  <ins>*Source Code as Text:*</ins>
+  
+  <div align="left">
 
-|*Main.java*: Source Code|*Main.java*: Output|
-|:---:|:---:|
-|![Java File](Output/Main_Class.JPG)|![Output](Output/Main_Output.JPG)|
-
-<ins>*Source Code as Text:*</ins>
-
-```
-import java.text.DecimalFormat;
-
-public class Main 
-{
+  ```
+  import java.text.DecimalFormat;
+  
+  public class Main 
+  {
     public static void main(String[] args)
     {
         DecimalFormat df = new DecimalFormat("0.00");
@@ -56,13 +64,17 @@ public class Main
         System.out.println("Apple's cost: $" + df.format(apple.getPrice()));
         System.out.println("Banana's cost: $" + df.format(banana.getPrice()));
     }
-}
+  }
 ```
+
+</div>
 
 <br>
 
 ## UML Diagram:
 
 ![UML Diagram](UML/UML.jpeg)
+
+</details>
 
 <hr>
